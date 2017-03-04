@@ -1,0 +1,17 @@
+{
+  "name": "test_node",
+  "version": "1.0.0",
+  "description": "A simple NodeJs App",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "author": "Benjamin Buff",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.1",
+    "mysql": "^2.13.0"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <title>NodeJS - Aufgabe</title>
+	<!--<link rel="stylesheet" href="/styles/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="./js/crud.js"></script>
+  </head>
+  <body>
+	<div class="container">
+	  	<h1>REST Applikation</h1>
+	  	
+	  	<div class="panel panel-default">
+		  	<div class="panel-heading">
+		  		<h3 class="panel-title">Eintrag erstellen</h3>
+	  		</div>
+	  		<div class="panel-body">
+		  			<form class="col-md-4">
+			  			<div class="form-group">
+		                	<label for="input1">Vorname</label>
+							<input  type="text" class="form-control" id="nameInput" placeholder="Gib deinen Vornamen ein..."/>
+		            	</div>
+		            	<div class="form-group">
+		                	<label for="input1">Nachname</label>
+							<input  type="text" class="form-control" id="lastNameInput" placeholder="Gib deinen Nachnamen ein..."/>
+		            	</div>
+		            	<div  class="col-md-3"><input  type="submit" id='btnPost' class="btn btn-primary"  value="Eintrag speichern"  /></div>
+		  			</form>
+	  		</div>
+		</div>
+		<div class="panel panel-default">
+		  	<div class="panel-heading">
+		  		<h3 class="panel-title">Einträge ausgeben</h3>
+	  		</div>
+	  		<div class="panel-body">
+		  		<form class="col-md-4">
+	  				<div  class="col-md-3"><input  type="submit" id='btnGet'  class="btn btn-primary"  value="Bestehende Einträge Anzeigen"  /></div>
+		  		</form>	
+		  		<div class="panel panel-default col-md-4">
+		  			<div class="panel-body">
+			  			<ul class="list-unstyled" id="responseList"></ul>
+		  			</div>
+				</div>
+	  		</div>
+		</div>
+	</div>
+  </body>
+</html>
